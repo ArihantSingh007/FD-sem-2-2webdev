@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Marks System</title>
+<style>
+    body{
+font-family: Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+.form input{
+margin:5px;
+padding:8px;
+}
+
+button{
+padding:8px 12px;
+margin:5px;
+cursor:pointer;
+background:#3498db;
+color:white;
+border:none;
+}
+
+button:hover{
+background:#2980b9;
+}
+
+#output{
+margin-top:20px;
+padding:15px;
+background:white;
+width:60%;
+margin-left:auto;
+margin-right:auto;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+
+<h2>Student Marks Management</h2>
+
+<div class="form">
+<input type="text" id="name" placeholder="Student Name">
+<input type="text" id="roll" placeholder="Roll Number">
+<input type="number" id="math" placeholder="Math Marks">
+<input type="number" id="science" placeholder="Science Marks">
+<input type="number" id="english" placeholder="English Marks">
+
+<button onclick="addStudent()">Add Student</button>
+</div>
+
+<div class="buttons">
+<button onclick="displayStudents()">Display All Students</button>
+<button onclick="showTotals()">Calculate Total Marks</button>
+<button onclick="showAverage()">Calculate Average Marks</button>
+<button onclick="showTopStudents()">Above 80 Average</button>
+<button onclick="showFailedStudents()">Failed Students</button>
+<button onclick="countStudents()">Total Students</button>
+</div>
+
+<div id="output"></div>
+
+<script src="/sc2.js"></script>
+
+</body>
+</html>
